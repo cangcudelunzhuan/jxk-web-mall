@@ -1,0 +1,51 @@
+
+
+.other_out
+  padding: 20px 
+  background: #F5F5F5
+  color: #999
+  text-align: center
+  margin-left: 16px
+  position:relative
+
+.swiper_contain
+  width: 100px
+  height:430px
+  overflow: hidden
+  :global
+    .swiper-slide 
+      align-items: center;
+      img 
+        width: 100px
+        height: 100px
+        cursor: pointer
+    .swiper-pagination-bullets
+      display: flex
+      width: 100%
+      text-align: center
+      justify-content: center
+      left :0
+      top:520px!important
+    .swiper-pagination-bullet
+      margin: 6px!important
+      border-radius: 0
+      height: 8px
+      width: 8px 
+    .swiper-pagination-bullet-active
+      background: #F9522E
+.navigation_box
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-top: 20px
+  .swiper_button_next, .swiper_button_prev
+    font-size: 16px
+    cursor:pointer
+    outline: none
+    width: 20px
+    height: 20px
+    z-index :9999
+  :global
+    .swiper-button-disabled
+      opacity:0.4
+      cursor: default

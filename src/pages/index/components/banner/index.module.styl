@@ -1,0 +1,120 @@
+.header_banner
+  height:430px
+  overflow: hidden
+  :global
+    .swiper-container
+      min-width:1190px
+    .swiper-slide
+      text-align: center
+      background-size: 100%
+      cursor: pointer
+.banner_content
+  position: absolute
+  left :0
+  top: 0
+  right :0
+  width: 1190px
+  margin: 0 auto
+  height :100%
+  text-align: right 
+  display: flex
+  justify-content: flex-end
+  // .text_box
+  //   position: relative
+  //   height :100%
+  //   width: 290px
+  //   color: #fff
+  //   z-index :1
+  //   opacity :0.8
+  //   font-size: 16px
+  //   &:after
+  //     position: absolute
+  //     content: ''
+  //     height :100%
+  //     width: 100%
+  //     background:rgba(0,0,0,0.5);
+  //     right:0
+  //     top: 0
+  //     z-index :-1
+  //   .line
+  //     padding: 10px 20px
+  //     text-align: left
+  //   .title_box
+  //     background:rgba(255,182,166,1);
+  //     .title
+  //       font-size: 24px
+  //       font-weight: bold
+  //     .price_box
+  //       background:linear-gradient(90deg,rgba(249,82,46,1) 0%,rgba(253,196,91,1) 100%);
+  //       display: flex
+  //       align-items: center
+  //       justify-content: space-between
+.banner_out
+  position: relative
+  .text_box
+    position:relative
+    text-align: left 
+    font-size: 14px
+    line-height: 14px
+    cursor: pointer
+    .line
+      padding: 10px 20px
+    .title_box
+      // display: none
+      background:rgba(255,182,166,0.2);
+      color: #fff
+      padding-top: 5px
+      // position: absolute
+      // left:0
+      // top: 0
+      // width: 100%
+      .title
+        font-size: 24px
+        font-weight: 700
+        padding: 5px 20px
+        line-height: 24px
+      .info
+        padding: 5px 20px 10px 20px
+        line-height: 18px
+      .price_box
+        background:linear-gradient(90deg,rgba(249,82,46,1) 0%,rgba(253,196,91,1) 100%);
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 7px 20px
+  :global
+    .index_bottom_sweiper
+      width: 290px
+      overflow: hidden
+      position: relative
+      height :100%
+      color: #fff
+      z-index :1
+      // opacity :0.8
+      font-size: 16px
+      z-index :9999
+      // display: flex
+      // flex-direction: column
+      &:after
+        position: absolute
+        content: ''
+        height :100%
+        width: 100%
+        background:rgba(0,0,0,0.5);
+        right:0
+        top: 0
+        z-index :-1
+      .swiper-wrapper
+        display: flex
+        flex-direction: column
+      .swiper-slide
+        width: 290px
+        height :34px
+        overflow: hidden
+      .swiper-slide-thumb-active
+        height: auto
+        // color: #F90
+        background:rgba(0,0,0,0.3);
+        // background: #f90
+        .title
+          display: none

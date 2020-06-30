@@ -1,0 +1,59 @@
+$pageWidth = 1190px;
+
+.box_title
+  padding-bottom: 15px
+  position: relative
+  .r_box
+    float: right
+  :global
+    // .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child,
+    // .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)
+    //   border-color:#F9522E
+    //   color: #F9522E
+    //   box-shadow:-1px 0 0 0 #F9522E;
+    // .ant-radio-button-wrapper:hover
+    //   color: #F9522E
+    .ant-select-selection
+      border: 0
+      background: transparent
+    .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active
+      box-shadow:none
+:global
+  // .ant-select-dropdown
+  //   min-width:90px
+  .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled)
+    background: #ffece6
+  .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled)
+    background-color: #ffece6!important
+
+.box_title_label
+  font-weight: bold
+  font-size: 20px
+  vertical-align: middle
+  margin-left:10px
+  margin-right:20px
+
+.more_link
+  color:#999
+  margin-left:30px
+
+
+
+.schedule
+  width: $pageWidth
+  margin: 40px auto
+
+
+// .schedule_pre_week,.schedule_next_week
+//   cursor pointer
+// .schedule_week
+//   cursor:pointer
+//   display: inline-block
+// .schedule_week + .schedule_week
+//   margin-left: 10px
+// .schedule_active_week
+//   color:#F9522E
+//   cursor: default
+
+.ul_out
+  display: flex

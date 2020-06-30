@@ -1,0 +1,79 @@
+
+.class_box
+  background: #fff
+  padding: 15px
+  margin: 20px 0
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  .class_item
+    background: #eeeeee
+    color: #666
+    border-radius: 2px
+    padding: 3px 
+    margin: 5px 8px
+    max-width :8.6%
+    flex: 1 8.6%
+    text-align: center
+    cursor: pointer
+  .active
+    background: #F9522E
+    color: #ffffff
+.position_box
+  position: absolute
+  left:0 
+  right:0 
+  width: 100%
+  margin: 0 auto
+  display: none
+  transition:  all 0.3s;
+.position_box_show
+  display: block
+.extend_out
+  position: relative
+  padding: 0 20px
+  z-index :99999
+  .extend_box
+    width: 1140px;
+    // border: 1px solid #dddddd
+    margin: 10px auto
+    padding: 15px
+    border-radius: 4px
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+    display: flex
+    flex-wrap: wrap
+    background: #fff
+    .class_item
+        background: #eeeeee
+        color: #666
+        border-radius: 2px
+        padding: 0 3px 
+        flex: 1 7.6%
+        max-width :7.6%
+        text-align: center
+        cursor: pointer
+        margin:5px 4px
+        line-height: 30px
+        overflow: hidden
+        height :30px
+        // text-overflow:ellipsis
+        // white-space: nowrap
+      .active
+        background: #F9522E
+        color: #ffffff
+  .arrow
+    position: absolute
+    width: 8.48528137px;
+    height: 8.48528137px;
+    background: transparent;
+    border-style: solid;
+    border-width: 4.24264069px;
+    top:-4px
+    border-top-color: #fff
+    border-right-color: transparent
+    border-bottom-color: transparent
+    border-left-color: #fff
+    box-shadow: -2px -2px 5px rgba(0,0,0,0.06)
+    transform: translateX(-50%) rotate(45deg);
+    left: 40px
+    transition:  all .3s;

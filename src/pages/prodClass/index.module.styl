@@ -1,0 +1,92 @@
+$pageWidth = 1190px;
+
+.wrapper
+  width: $pageWidth;
+  margin: 0 auto
+
+
+.tab_box
+  display: flex
+  align-items: center
+  border: 1px solid #F9522E
+  span 
+    flex: 1 33.3%
+    font-size: 14px 
+    padding: 10px 0
+    text-align: center
+    color: #F9522E
+    line-height: 14px
+    cursor: pointer
+  span +span 
+    border-left: 1px solid  #F9522E
+  .active
+    background: #F9522E
+    color: #fff
+
+
+.sort_box
+  display: flex
+  align-items: center
+  background: #EAEAEA
+  border: 1px solid #dadada
+  padding: 16px
+  margin-top: 10px
+  font-size: 14px
+  .sort_item
+    position: relative
+    cursor: pointer
+  .sort_item+.sort_item
+    margin-left: 40px
+  .sort_item:before, .sort_item:after
+    position: absolute
+    content: ''
+    width: 0
+    height: 0
+    border-left:4px solid transparent
+    border-right:4px solid transparent  
+    right:-20px
+  .sort_item:before
+    border-bottom:4px solid #bfbfbf
+    top: 6px
+  .sort_item:after 
+    border-top:4px solid #bfbfbf
+    top: 12px
+  .activeUp:before
+    border-bottom:4px solid #F9522E
+  .activeDown:after
+    border-top:4px solid #F9522E
+.product_box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 1218px
+  margin: 10px auto
+.red
+  color: #F9522E
+.green
+  color: #20AC30
+
+
+
+:global
+  .ant-empty
+    padding: 50px 0
+  .ant-pagination
+    padding: 20px 0
+    margin-top: 20px
+    text-align: center
+  .ant-pagination-item-active,
+  .ant-pagination-item-active:hover,
+  .ant-pagination-item-active:focus a, .ant-pagination-item-active:hover a,
+  .ant-pagination-item-active:focus, .ant-pagination-item-active:hover
+    border-color: #F9522E
+  .ant-pagination-item-active a,
+  .ant-pagination-item-active a:hover,
+  .ant-pagination-item a:hover,
+  .ant-pagination-item :hover,
+  .ant-pagination-item-active:focus a, .ant-pagination-item-active:hover a,
+  .ant-pagination-prev:not(.ant-pagination-disabled):focus .ant-pagination-item-link,
+  .ant-pagination-next:not(.ant-pagination-disabled):focus .ant-pagination-item-link, 
+  .ant-pagination-prev:not(.ant-pagination-disabled):hover .ant-pagination-item-link, 
+  .ant-pagination-next:not(.ant-pagination-disabled):hover .ant-pagination-item-link
+    color: #F9522E

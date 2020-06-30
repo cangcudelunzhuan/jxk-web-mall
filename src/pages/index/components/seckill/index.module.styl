@@ -1,0 +1,139 @@
+$pageWidth = 1190px;
+
+.box_title
+  padding-bottom: 15px
+  position: relative
+  .r_box
+    float: right
+
+.box_title_label
+  font-weight: bold
+  font-size: 20px
+  vertical-align: middle
+  margin-left:10px
+  margin-right:20px
+
+.more_link
+  color:#999
+  margin-left:30px
+
+.run_second
+  position: absolute
+  left:calc(50% - 116px)
+  top:15px
+
+.seckill_box
+  width:$pageWidth
+  margin-left: auto
+  margin-right: auto
+  .box_title
+    padding-top:15px
+
+
+
+.seckill_list
+  &:after
+    content:''
+    display: block
+    clear:both
+    height:0
+    overflow:hidden
+
+.seckill_items
+  width:25%
+  height:390px
+  float: left
+  padding:15px 10px
+  figure
+    height:187px
+    position:relative
+    img
+      width:100%
+      height:100%
+
+.seckill_item_content
+  box-shadow: 0 0 3px #ccc
+  background-color: white
+  position:relative
+
+.seckill_detail
+  padding:10px 15px 30px 15px
+  color:#999
+  font-size: 12px
+  h4
+    color:#333
+    font-size: 16px
+
+.seckill_selltime
+  position: absolute
+  width:100%
+  left:0
+  bottom:0
+  background-color:rgba(0,0,0,.3)
+  color:white
+  font-size:12px
+  text-align: center
+
+
+.seckill_specs{
+  
+}
+
+.seckill_price
+  var
+    color:#F9522E
+    font-size:28px
+    padding-right:10px
+
+.seckill_proposal
+  display: flex
+  justify-content: space-between
+
+  
+.seckill_count
+  position: absolute
+  left:15px
+  bottom:5px
+
+.seckill_hover
+  background-color:rgba(0,0,0,.8)
+  padding:20px 15px 60px 15px
+  color:white
+  position:absolute
+  left:0
+  top:0
+  width:100%
+  height:100%
+  display: none
+
+.seckill_item_content:hover .seckill_hover
+  display: block
+
+.content_box
+  display: flex
+  flex-wrap: wrap
+  width: 1220px
+  margin: 0 auto
+  justify-content: center
+.seckill_link
+  height:60px
+  position:absolute
+  width:100%
+  left:0
+  bottom: 0
+  background-color:#F9522E
+  border:1px solid #F9522E
+  display: flex
+  a
+    display: block
+    height:100%
+    line-height: 60px
+    flex: 1
+    text-align: center
+    color:white
+  a:first-child
+    background-color:white
+    color:#F9522E
+
+.secondClassName
+  background-color: #f9522e

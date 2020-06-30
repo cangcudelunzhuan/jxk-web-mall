@@ -1,0 +1,101 @@
+/**
+ *   项目全局样式
+ */
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul,figure,section,aside,article{
+  margin:0;
+  padding:0;
+  box-sizing: border-box
+}
+button,input,select,textarea{
+  font-size:100%
+}
+h1,h2,h3,h4,h5,h6{
+  font-size:100%
+}
+address,cite,dfn,em,var{
+  font-style:normal
+}
+code,kbd,pre,samp{
+  font-family:courier new,courier,monospace
+}
+small{font-size:12px}
+li{list-style:none}
+a{text-decoration:none}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+legend{color:#000}
+fieldset,img{border:0}
+img{vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+
+html
+  font:14px/1.5 '微软雅黑'
+
+body
+  background-color:#F9F9F9
+  color:#333
+
+i,var,em
+  font-style: normal
+
+th
+  font-size: inherit
+
+for i in 3px 5px 10px 15px 20px 25px 30px 35px 40px 50px
+  .ml{i}
+    margin-left i
+  .mt{i}
+    margin-top i
+  .mr{i}
+    margin-right i
+  .mb{i}
+    margin-bottom i
+  .pl{i}
+    padding-left i
+  .pt{i}
+    padding-top i
+  .pr{i}
+    padding-right i
+  .pb{i}
+    padding-bottom i
+
+@font-face 
+  font-family: "alipayNumber";
+  src: url('https://static.jdxiaokang.com/assets/static/css/font/alipay/alipayNumber.ttf');
+
+.iconfont
+  vertical-align: middle
+
+// 表单必填项
+.required
+  vertical-align: middle
+  color:#E83928
+  &:after
+    content:'*'
+
+// 操作按钮
+.link_btn
+  color:#3083ED
+  cursor:pointer
+  vertical-align: middle
+
+.ant-form-item
+  margin-bottom 5px
+
+.main-content
+  background-color: white
+  padding:20px 15px
+  border-radius: 3px
+  box-shadow: 0 0 20px #dfdfdf
+// 分页列表 操作按钮
+.page-list-handler
+  >a,>span,>label
+    margin-left:8px
+    vertical-align: bottom
+    &:first-child
+      margin-left:0
+
+// 分页大容器
+.pagination-page
+  position relative
+  padding-bottom:90px
